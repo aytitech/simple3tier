@@ -1,8 +1,5 @@
 FROM ubuntu:20.04
 
-LABEL maintainer="kesaralive@gmail.com"
-LABEL description="Apache / PHP development environment"
-
 ARG DEBIAN_FRONTEND=newt
 RUN apt-get update && apt-get install -y lsb-release && apt-get clean all
 RUN apt install ca-certificates apt-transport-https software-properties-common -y
@@ -51,6 +48,10 @@ RUN find /var/www -type d -exec chmod 775 {} +
 RUN find /var/www -type f -exec chmod 664 {} +
 
 EXPOSE 80
+
+
+COPY ./api/ /var/www/html/
+RUN rm -f /var/www/html/index.html
 
 # start Apache2 on image start
 CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]

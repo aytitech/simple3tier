@@ -37,11 +37,11 @@ CREATE TABLE `todos` (
 --
 
 INSERT INTO `todos` (`_id`, `todo`) VALUES
-(1, 'I will wake up at 4 in the morining.'),
-(2, 'I will practice docker for 1 hour.'),
-(3, 'I will give time for 2 hours javascript.'),
-(4, 'Then I will have breakfast.'),
-(5, 'I will give time for 3 hours php.');
+(1, 'docker ve kubernetes videolarını bir daha izleyecegim'),
+(2, 'izlerken bos durmayacak hocayla birlikte ben de yapacagim'),
+(3, 'yilbasinda asiri icmeyecegim'),
+(4, 'iceceksem de kaliteli bir viski icecegim'),
+(5, 'cetinle yasli diye artik dalga gecmeyecegim. olur molur vicdan azabi cekeriz');
 
 --
 -- Indexes for dumped tables

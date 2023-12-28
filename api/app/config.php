@@ -1,5 +1,5 @@
 <?php 
-define("DB_HOST", "database");
-define("DB_USERNAME", "todo_admin");
-define("DB_PASSWORD", "password");
-define("DB_NAME", "todo_app");
+define("DB_HOST", getenv('DB_HOST'));
+define("DB_USERNAME", getenv('DB_USERNAME'));
+define("DB_PASSWORD", getenv('DB_PASSWORD'));
+define("DB_NAME", getenv('DB_NAME'));
